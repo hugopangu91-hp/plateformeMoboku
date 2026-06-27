@@ -1,0 +1,486 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;   
+}
+
+
+.main-header .logo img{
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+
+.main-header{
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+}
+
+
+ul li a{
+    color: rgba(256,256,256,.8);
+    transition: .5s ease-in-out;
+    background-color: transparent;
+    padding: 15px;
+    margin: 0;
+    font-weight: bold;
+  
+
+}
+
+ul li a:hover {
+    background-color: rgba(190, 225, 73, 0.8);
+    padding: 15px ;
+    border-radius: 100px;
+    color: black;
+  
+    font-weight: bold;
+   
+}
+
+header {
+    padding: auto;
+    padding: 30px 5%;
+    position: absolute;
+
+}
+
+header button {
+    padding: 20px 20px ;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    background: #fff;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+}
+
+header :hover button {
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.main-header a.active {
+    background-color: rgba(190, 225, 73, 0.8);
+    padding: 15px ;
+    border-radius: 100px;
+    color: black;
+}
+
+
+section {
+    width: 95%;
+    height: 100vh;
+    margin-bottom: 100px;
+    margin: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 120px;
+    
+}
+
+
+
+/*Section 0*/
+.apropos-section0 {
+  
+    background-color: rgba(0, 0, 0, 0.1);
+
+   
+}
+
+.apropos-section0 img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #fff;
+}
+
+.container-section0 {
+    display: flex;
+
+}
+
+
+.container-section0 .image-left img{
+    display: flex; 
+   position: absolute;
+   left: 50px;
+   bottom: 200px;
+   z-index: 100;
+   cursor: pointer;
+
+}
+
+.image-left .image1{
+    transition: .5s ease-in-out;
+  
+}
+
+
+.image-left .image2{
+    margin-left: 250px;
+    position: relative;
+    top: 50px;
+    transition: .5s ease-in-out;
+}
+
+.image-left .image3{
+    margin-left: 450px;
+    position:relative;
+    top: 100px;
+    
+}
+
+.image1 {
+    transition: .5s ease-in-out;
+}
+
+.image2 {
+    transition: .5s ease-in-out;
+}
+
+.image3 {
+    transform: rotate(10deg) scale(.5);
+    box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.3);
+    transition: .5s ease-in-out;
+}
+
+
+
+.image1:hover{
+    transform: rotate(10deg) scale(.5);
+    box-sizing: border-box
+   
+}
+
+.image2:hover{
+    transform: rotate(-20deg) scale(1.1);
+    box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image3:hover{
+    transform: rotate(-10deg) scale(1);
+   
+
+}
+
+
+.text-right {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   left: 380px;
+   width: 350px;
+   bottom: 150px;
+
+
+   
+}
+
+
+.text-right h1 span {
+    color:  rgba(70, 83, 28, 0.8) ;
+    font-size: 30px;
+
+}
+.text-right h2{
+    font-size: 20px;
+    color: darkcyan;
+}
+
+.text-right p {
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: justify;
+    
+}
+
+
+.text-right .btn-connecter button{
+    display: flex;
+    position: relative;
+    padding: 10px 50px;
+    top: 30px;
+    left: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    background-color: darkcyan;
+    color: #fff;
+    font-weight: bold; 
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.text-right .btn-connecter button:hover{
+    background-color: rgb(75, 176, 176);
+}
+
+
+
+
+/*Section 1*/
+.apropos-section1 {
+    background-color: rgba(0, 0, 0, 0.1);
+   
+   
+}
+
+.container-section1 img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    
+  
+
+    
+}
+
+.image-left .marche2{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    right: 100px;
+    transform: rotate(10deg);
+    transition: .5s ease-in-out;
+}
+
+.image-left .marche1{
+    transform: rotate(-30deg);
+    transition: .5s ease-in-out;
+
+}
+
+.image-left .marche1:hover{
+    transform: rotate(30deg) scale(.5);
+    
+}
+
+.image-left .marche2:hover{
+    transform: rotate(-30deg) scale(1.2);
+}
+
+
+
+
+
+.container-section1 .image-left{
+    display: flex;
+    position: absolute;
+    right: 450px;
+    bottom: 150px;
+    z-index: 100;
+    cursor: pointer;
+    
+
+
+}
+
+.text-right {
+    position: relative;
+    width: 350px;
+    margin-top: 200px;
+   
+}
+
+.text-right .title h1{
+    font-size: 30;
+
+}
+
+.text-right a{
+    transition: .5s ease-in-out;
+}
+
+.text-right a:hover {
+    text-decoration: underline;
+}
+
+.button button {
+    position: relative;
+    left: 20px;
+    bottom: 100px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color:rgba(142, 181, 11, 0.8);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    
+}
+
+.button button:hover {
+    background-color: rgba(194, 231, 72, 0.8);
+}
+
+.button .btn-marche{
+    position: relative;
+    left: 250px;
+}
+
+
+
+
+
+
+/*Section 2*/
+.apropos-section2 {
+    background-color: rgba(0, 0, 0, 0.1);
+   
+}
+
+.container-section2 .image-left img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.container-section2 .image-left {
+    display: flex;
+    position: relative;
+    top: 50Px;
+    right: 350px;
+}
+
+.image-left .restaurant1{
+    transform: scale(.6);
+
+}
+
+.image-left .restaurant2{
+    position: relative;
+    left: 200px;
+    
+}
+
+.image-left .restaurant3{
+    position: relative;
+    left: 400px;
+    transform: scale(.5);
+
+    
+} 
+
+.restaurant3:hover{
+    transform: scale(1);
+}
+
+.restaurant1:hover{
+    transform: scale(1);
+}
+
+.restaurant2:hover{
+    transform: scale(1.1);
+}
+
+
+.button {
+    position: relative;
+    right: 260px;
+    transform: translateY(-30px);
+}
+.button .contact{
+     background-color: darkcyan;
+     color: #fff;
+}
+
+.button .contact:hover{
+     background-color: rgb(104, 210, 210);
+     color: black;
+}
+
+.button .button-section2{
+    margin-top: -80px;
+    position: relative;
+    right: 30px;
+    gap: 20px;
+    display: flex;
+}
+
+
+
+
+
+/*footer*/
+.main {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,.2);
+    width: 95%;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    top: 100px;
+    
+    
+}
+
+.logo img{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.liens-footer{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.main a {
+    transition: .5s ease-in-out;
+}
+
+.main a:hover {
+    text-decoration: underline;
+}
+

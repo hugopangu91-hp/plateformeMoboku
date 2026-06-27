@@ -1,0 +1,810 @@
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+     
+}
+
+
+/*Scroll  */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+  
+
+body a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/*Header style*/
+.main-header .logo img{
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+
+.main-header{
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+}
+
+
+ul li a{
+    color: rgba(256,256,256,.8);
+    transition: .5s ease-in-out;
+    background-color: transparent;
+    padding: 15px;
+    margin: 0;
+    font-weight: bold;
+  
+
+}
+
+ul li a:hover {
+    background-color: rgba(190, 225, 73, 0.8);
+    padding: 15px ;
+    border-radius: 100px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+
+header {
+    padding: auto;
+    padding: 30px 5%;
+    position: absolute;
+
+}
+
+header button {
+    padding: 20px 20px ;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    background: #fff;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+}
+
+header :hover button {
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.main-header a.active {
+    background-color: rgba(190, 225, 73, 0.8);
+    padding: 15px ;
+    border-radius: 100px;
+    color: black;
+}
+
+section {
+    
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+   margin-bottom: 100px; 
+    background-color: #e7e2e2;
+    border-radius: 10px;
+    
+}
+
+
+
+
+/* Acueil Page contact */
+
+.accueil-contact{
+    background-image: linear-gradient(180deg,rgba(0,0,0,.5),rgba(0,0,0,.8)),url(../images/plat_accueil2.jpg);
+    border-radius: 0px;
+    text-align:center;
+    color:white;
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    margin-top: 0;
+}
+
+
+
+
+
+.container-section-accueil .text-accueil h1{
+    font-weight: bold;
+    font-size: 60px;
+
+}
+
+.text-accueil h1 span{
+    color: #45a2a2;
+}
+
+.text-accueil h1 .mboka{
+    color: #879e2f;
+}
+
+.text-accueil h1{
+    color: rgb(218, 212, 212);
+}
+
+.text-accueil p{
+    color: #ccc;
+}
+
+.container-section-accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-section-accueil .text-accueil p{
+    font-size: 20px;
+    margin-top: 15px;
+    line-height: 30px;
+    
+}
+
+.button-accueil{
+    display: flex;
+    margin-top: 25px;
+    gap: 30px;
+    margin-left: 150px;
+    
+
+}
+
+.button-accueil button{
+    width: 250px;
+    height: 40px;
+    border-radius:10px ;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button-accueil .contacter{
+    background-color: #57acac;
+    transition: .5s ease-in-out;
+}
+.button-accueil .connexion{
+    background-color: transparent;
+    border: 1px solid #fff;
+    backdrop-filter: blur(100px);
+    color: #fff;
+    transition: .5s ease-in-out;
+}
+
+
+.button-accueil .connexion:hover{
+    background-color:rgba(256,256,256,.2);
+   
+}
+
+.button-accueil .contacter:hover{
+    background-color: #79e8e8;
+    
+
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.text-accueil h1{
+    animation: slideUp 1.2s ease-out forwards;
+    
+}
+
+.text-accueil p{
+    animation: slideUp 1.2s ease-out forwards;
+    
+}
+
+.button-accueil .contacter{
+    animation: slideUp 1.2s ease-out forwards;
+    
+}
+
+.button-accueil .connexion{
+    animation: slideUp 1.2s ease-out forwards;
+    
+}
+
+/*section 1 contact */
+
+.section-contact1{
+    background-image: url(../images/connexion.png);
+   
+    height: 100vh;
+}
+
+.login{
+   
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    border: 1px solid #79e8e8;
+    left: 200px;
+    padding-top: 80px;
+    
+}
+
+
+
+.login h1{
+    margin-bottom: 250px;
+    background-color: #57acac;
+    width: 100% ;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+
+    
+}
+
+.container-small{
+    position: relative;
+    top: 100px;
+     
+
+}
+
+.container-small a{
+    color: rgb(4, 4, 240);
+    margin-top: 20px;
+}
+
+.input-place{
+    position: relative;
+    bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    right: 15px;
+    
+}
+
+.input-place input{
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid rgba(0, 0, 0, 0.0) ;
+    font-size: 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: .1s ease-in-out;
+}
+
+.input-place input:focus{
+    border: 3px solid #058080;
+}
+
+
+
+.remember {
+    display: flex;
+    position: relative;
+    bottom: 270px;
+    gap: 20px;
+    color: rgba(256,256,256,.8);
+    left: 20px;
+}
+
+.remember a:hover{
+    text-decoration: underline;
+}
+
+.button {
+    position: relative;
+    bottom: 240px;
+    left: 50px;
+}
+
+.button button{
+    padding: 6px 80px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.34);
+    transition: .5s ease-in-out;
+    background-color: rgba(256,256,256,.8);
+    
+}
+
+.button button:hover{
+    background-color: #70cbcb;
+    border: none;
+    border-color: #45a2a2;
+    border: 1px solid transparent;
+
+}
+
+.creation-compte{
+    position: relative;
+    bottom: 210px;
+    display: flex;
+    gap:10px ;
+    color: rgba(256,256,256,.8);
+}
+
+/*section 3: profil utilisateur*/
+
+.profil-utilisateur{
+    background-image: url(../images/bgProfil.png);
+    display: flex;
+}
+
+.profil-utilisateur img{
+    width: 220px;
+    margin-top: -10px;
+}
+
+.profil-utilisateur .image-right{
+    position: relative;
+    bottom: 15px;
+  
+}
+
+.container-profil{
+ 
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    left: 300px;
+    justify-content: center;
+    gap: 30px;
+  
+}
+
+.container-profil .texte{
+    text-align: justify;
+    width: 400px;
+    margin-left: 150px;
+   
+  
+}
+
+.texte p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: justify;
+    
+}
+
+.texte p span{
+    font-size: 18px ;
+    color:c #698206;
+}
+
+.texte h1{
+    text-shadow:1px 2px 2Px #698206 ;
+}
+
+.container-profil .image-right{
+    margin-left:100px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.image-right button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.image-right .buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.buttons .client{
+    background-color: #879e2f;
+    color: #fff;
+}
+
+.buttons .etablissement{
+    background-color: #058080;
+    color: #fff;
+}
+
+.buttons .client:hover{
+   background-color: #4e5923; 
+}
+
+.buttons .etablissement:hover{
+   background-color:  #164949 ; 
+}
+
+/*section 4: Compte client*/
+
+.compte-client{
+    background-image: linear-gradient(180deg, rgba(256,256,256,.4)),url(../images/client.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    display: flex;
+    position: relative;
+}
+
+.compte-client .client-form{
+    width: 500px;
+    height: 480px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.34);
+    background-color: rgb(37, 102, 102);
+    
+}
+
+.client-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 380px;
+    margin-top: 50px;
+}
+
+.client-form input{
+    border: none;
+    outline: none;
+}
+
+.client-form h1{
+    position: relative;
+    bottom: 50px;
+    color: #e7e2e2;
+    font-weight: bold;
+    background-color: rgb(1, 88, 88);
+    width: 100%;
+    height: 50px;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+.container-form .input-champ{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+}
+
+.container-form{
+    position: relative;
+    bottom: 20px;
+}
+
+.input-champ input{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(256,256,256,.8);
+    
+}
+
+.input-champ select{
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(256,256,256,.8);
+}
+
+
+.container-form .envoyer{
+    position: relative;
+    left: 50px;
+    top: 30px;
+    padding: 5px 100px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: transparent;
+    border:1px solid #63d7d7;
+    font-size: 16px;
+    color: #e7e2e2;
+    transition: .5s ease-in-out;
+
+}
+
+.container-form .envoyer:hover{
+    background-color: rgba(256,256,256,.1);
+}
+
+.container-form .pays{
+    position: relative;
+    left: 20px;
+    color: rgba(256,256,256,.5);
+}
+
+
+/*section 5: compte etablissement*/
+
+.compte-etablissement{
+    background-image: linear-gradient(180deg,rgba(256,256,256,.3)),url(../images/bgEtatblissement2.png);
+
+}
+
+span{
+    color: #058080;
+    font-weight: bold;
+}
+
+.etablissement-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 480px;
+    border-radius: 20px;
+    margin-left: 380px;
+    margin-top: 60px;
+    background-color: rgb(37, 102, 102);
+    color: rgba(256,256,256,.6);
+    box-shadow: 5px 5px 30px 5px rgba(0,0,0,.2) ;
+    
+
+}
+
+.etablissement-form .container-form-e{
+  
+    display: flex;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+}
+
+.etablissement-form h1{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: #e7e2e2;
+    background-color: rgb(1, 88, 88);
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.container-form-e .input-champ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.container-form-e{
+    display: flex;
+    position: relative;
+    bottom:15px;
+    
+}
+
+.container-form-e input{
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.container-form-e .numero-etab{
+    width: 50%;
+}
+
+
+    
+.container-form-e .envoyer{
+    position: relative;
+    left: 0px;
+    top:10px;
+    padding: 5px 100px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: transparent;
+    border:1px solid #63d7d7;
+    font-size: 16px;
+    color: #e7e2e2;
+    transition: .5s ease-in-out;
+
+
+}
+
+.container-form-e .envoyer:hover{
+    background-color: rgba(256,256,256,.1);
+}
+
+/* Section 5 contact*/
+
+
+
+.section-contact3{
+    background-image: url(../images/background_contact.png);
+    background-position: center;
+
+}
+
+.container-contact .image-contact img{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.image-contact {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid lightseagreen;
+    padding: 20px;
+    padding-left: 15px;
+    border-radius: 1rem;
+    left: 350px;
+    box-shadow: 5px 5px 30px  5px rgba(0,0,0,.2);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer main*/
+
+.main {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,.2);
+    width: 95%;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+.text-footer{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.logo img{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.liens-footer{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.main a {
+    transition: .5s ease-in-out;
+}
+
+.main a:hover {
+    text-decoration: underline;
+}
+

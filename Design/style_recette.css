@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+
+.main-header .logo img{
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+
+.main-header{
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+}
+
+
+ul li a{
+    color: rgba(256,256,256,.8);
+    transition: .5s ease-in-out;
+    background-color: transparent;
+    padding: 15px;
+    margin: 0;
+    font-weight: bold;
+  
+
+}
+
+ul li a:hover {
+    background-color: rgba(190, 225, 73, 0.8);
+    padding: 15px ;
+    border-radius: 100px;
+    color: black;
+  
+    font-weight: bold;
+   
+}
+
+header {
+    padding: auto;
+    padding: 30px 5%;
+    position: absolute;
+
+}
+
+header button {
+    padding: 20px 20px ;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    background: #fff;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+}
+
+header :hover button {
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+header button.active {
+    background-color: rgba(118, 152, 5, 0.8);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+
+}
+
+
+
+
+
+section {
+    width: 95%;
+    height: 100vh;
+    margin-bottom: 100px;
+    margin: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 120px;
+    
+}
+
+
+
+/*Section 0*/
+.recette-section0 {
+    background-color: rgba(0, 0, 0, 0.1);
+   
+}
+
+
+/*Section 1*/
+.recette-section1 {
+    background-color: rgba(0, 0, 0, 0.1);
+   
+}
+
+
+
+/*Section 2*/
+.recette-section2 {
+    background-color: rgba(0, 0, 0, 0.1);
+   
+}
+
+/*Footer main*/
+.main {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,.2);
+    width: 95%;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    top: 100px;
+    
+    
+}
+
+.logo img{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.liens-footer{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.main a {
+    transition: .5s ease-in-out;
+}
+
+.main a:hover {
+    text-decoration: underline;
+}
+
+
+.recette-section0 img{
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    position: absolute;
+    margin-left:-400px ;
+    
+    
+}
